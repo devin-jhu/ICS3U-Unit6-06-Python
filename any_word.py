@@ -107,9 +107,8 @@ def hex_change(string):
     }
     # process & output
     for word in string:
-        if word in dictionary:
-            if word in dictionary.keys():
-                hex_value += dictionary[word]
+        if word in dictionary.keys():
+            hex_value += dictionary[word]
     hex_conversion = print("\n{0} in hex is [{1}]".format(string, hex_value))
 
     return hex_conversion
